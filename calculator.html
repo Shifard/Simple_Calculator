@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <p>
+        <button
+        onclick="print ('1')"
+        >1</button>
+        <button
+        onclick="print('2')"
+        >2</button>
+        <button
+        onclick="print('3')"
+        >3</button>
+        <button
+        onclick="print(' + ') "
+        >+</button>
+    </p>
+    <p>
+        <button
+        onclick="print('4') "
+        >4</button>
+        <button
+        onclick="print('5') "
+        >5</button>
+        <button
+        onclick="print('6') "
+        >6</button>
+        <button
+        onclick="print(' - ') "
+        >-</button>
+    </p>
+    <p>
+        <button
+        onclick="print('7') "
+        >7</button>
+        <button
+        onclick="print('8') "
+        >8</button>
+        <button
+        onclick="print('9') "
+        >9</button>
+        <button
+        onclick="print(' * ') "
+        >*</button>
+    </p>
+    <p>
+        <button
+        onclick="print('0') "
+        >0</button>
+        <button
+        onclick="print('.') "
+        >.</button>
+        <button
+        onclick="print(' / ') "
+        >/</button>
+        <button
+        onclick="
+        calculation = eval(calculation)
+        console.log(calculation);
+        alert(`The answer is: ${calculation}`)
+        ">=</button>
+    </p>
+    <p>
+        <button
+        onclick="calculation = ''
+        console.log('Cleared!')"
+        >Clear</button>
+    </p>
+    <script>
+        let calculation = "";
+        function print (unit)
+        {
+            calculation+=unit
+            console.log(calculation);
+        }
+    </script>
+</body>
+</html>
