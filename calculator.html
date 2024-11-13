@@ -10,6 +10,7 @@
     <div class="container">
         <div class="box">
             <h2 class="name">Calculator</h2>
+            <p id="result"></p>
             <p>
                 <button
                 onclick="print ('1')"
@@ -66,13 +67,14 @@
                 onclick="
                 calculation = eval(calculation)
                 console.log(calculation);
-                alert(`The answer is: ${calculation}`)
+                document.getElementById('result').innerHTML = `${calculation}`
                 ">=</button>
             </p>
             <p>
                 <button
                 onclick="calculation = ''
-                console.log('Cleared!')"
+                console.log('Cleared!')
+                document.getElementById('result').innerHTML = 'Cleared'"
                 >Clear</button>
             </p>
         </div>
